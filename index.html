@@ -26,7 +26,7 @@
 
 <body class="text-gray-800 flex flex-col min-h-screen relative">
   <!-- Optional dark overlay to improve contrast on busy images -->
-  <div class="absolute inset-0 bg-black/30 pointer-events-none"></div>
+  <div class="fixed inset-0 bg-black/30 pointer-events-none"></div>
 
   <!-- Page content -->
   <header class="fixed inset-x-0 top-0 z-20">
@@ -199,20 +199,20 @@
               employee tasks, targets, and leave requests.
             </p>
             <dl class="mt-5 space-y-3 text-sm text-gray-600/90 dark:text-gray-300">
-              <div class="flex gap-3">
+              <div class="flex flex-col gap-3 sm:flex-row">
                 <dt class="min-w-[110px] font-semibold text-emerald-600">Role Access</dt>
                 <dd>Dedicated Admin, Manager, and Staff views streamline approvals, lead transfers, and coaching loops.
                 </dd>
               </div>
-              <div class="flex gap-3">
+              <div class="flex flex-col gap-3 sm:flex-row">
                 <dt class="min-w-[110px] font-semibold text-emerald-600">Ops Toolkit</dt>
                 <dd>Activity timelines, task boards, and leave management keep day-to-day operations coordinated.</dd>
               </div>
-              <div class="flex gap-3">
+              <div class="flex flex-col gap-3 sm:flex-row">
                 <dt class="min-w-[110px] font-semibold text-emerald-600">Targets & Reporting</dt>
                 <dd>Real-time dashboards surface target pacing and customer insights across every store location.</dd>
               </div>
-              <div class="flex gap-3">
+              <div class="flex flex-col gap-3 sm:flex-row">
                 <dt class="min-w-[110px] font-semibold text-emerald-600">Automation</dt>
                 <dd>Push notifications, customer exports, and automated birthday emails keep the team proactive at scale.
                 </dd>
