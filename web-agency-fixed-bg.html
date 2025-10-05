@@ -10,7 +10,7 @@
     /* Ensure full-bleed fixed background on all browsers */
     html, body { height: 100%; }
     body {
-      background-image: url('https://c4.wallpaperflare.com/wallpaper/861/346/430/interstellar-movie-film-stills-wallpaper-preview.jpg');
+      background-image: url('https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNjhlMjZmZGI5YzVjODE5MWFlZWM3YmQ1MWNlNzU5MDA6ZmlsZV8wMDAwMDAwMGZlNGM2MjJmOThmNjIyMGQ1ODk1YWVlNiIsInRzIjoiMjAzNjYiLCJwIjoicHlpIiwiY2lkIjoiMSIsInNpZyI6ImNiMWUyMTg4MjgyNTJjNzE0NjcyNmI5ZTA4ZjU3ZWI5OTA1MzgwNmQyNjhmZTg0ZGU4NWFkNjYyNjM2NjExZjUiLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsLCJjcCI6bnVsbCwibWEiOm51bGx9');
       background-attachment: fixed;
       background-size: cover;
       background-position: center;
@@ -25,37 +25,103 @@
   <!-- Page content -->
   <header class="relative z-10">
     <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-      <a class="text-2xl font-extrabold tracking-tight text-white drop-shadow" href="#">DevAgency</a>
+      <a class="text-2xl font-extrabold tracking-tight text-white drop-shadow" href="#">NexouraX</a>
       <nav class="hidden md:flex gap-6">
         <a href="#services" class="text-white/90 hover:text-white font-medium">Services</a>
         <a href="#work" class="text-white/90 hover:text-white font-medium">Work</a>
         <a href="#pricing" class="text-white/90 hover:text-white font-medium">Pricing</a>
         <a href="#contact" class="text-white/90 hover:text-white font-medium">Contact</a>
       </nav>
-      <a href="#contact" class="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-4 py-2 text-white font-semibold shadow hover:bg-emerald-700">
+      <a href="mailto:Nexourax@gmail.com" class="inline-flex items-center gap-2 rounded-xl border border-indigo-600 px-4 py-2 text-white font-semibold shadow hover:bg-emerald-700">
         Get a quote
       </a>
     </div>
   </header>
 
   <!-- Hero card -->
-  <section class="relative">
-    <div class="px-6 pt-16">
-      <div class="p-8 md:p-12">
-        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight">
-          Modern Web Development
+  <section class="relative flex">
+    <div class="flex px-6 w-full justify-center">
+      <div class="p-8 md:p-12 text-center">
+        <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white leading-tight">
+          Building Digital Foundations That Last.
         </h1>
-        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight">
-          for fast‑moving teams
-        </h1>
-        <p class="mt-4 text-lg text-gray-700/90 dark:text-gray-200">
+        <p class="hidden sm:flex mt-4 text-lg text-gray-700/90 dark:text-gray-200">
           We craft blazing‑fast, SEO‑ready websites and apps using Next.js, React, and Tailwind —
           shipped with care, optimized for growth.
         </p>
-        <div class="mt-8 flex flex-wrap gap-3">
-          <a href="#contact" class="rounded-xl bg-emerald-600 px-5 py-3 text-white font-semibold hover:bg-emerald-700">Start a project</a>
-          <a href="#services" class="rounded-xl bg-white/60 dark:bg-white/10 border border-white/60 px-5 py-3 text-gray-900 dark:text-white font-semibold hover:bg-white/80">Explore services</a>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Split section -->
+  <section id="work" class="relative z-10 mt-60">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-stretch">
+      <div class="rounded-2xl bg-white/70 dark:bg-white/10 backdrop-blur-md border border-indigo-400 p-8 shadow">
+        <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Results that compound</h3>
+        <ul class="mt-4 space-y-3 text-gray-700/90 dark:text-gray-200">
+          <li>✅ 95+ Lighthouse Performance</li>
+          <li>✅ 30–60% faster page loads</li>
+          <li>✅ SEO‑ready with rich snippets</li>
+          <li>✅ Analytics & A/B testing baked in</li>
+        </ul>
+        <a href="#contact" class="mt-6 inline-flex rounded-xl bg-emerald-600 px-5 py-3 text-white font-semibold hover:bg-emerald-700">See case studies</a>
+      </div>
+      <div class="rounded-2xl bg-white/70 dark:bg-white/10 backdrop-blur-md border border-indigo-400 p-8 shadow">
+        <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Tech we love</h3>
+        <div class="mt-4 grid grid-cols-2 gap-3 text-gray-800 dark:text-gray-100">
+          <span class="rounded-lg bg-white/20 border border-white/60 px-3 py-2">Next.js</span>
+          <span class="rounded-lg bg-white/20 border border-white/60 px-3 py-2">React</span>
+          <span class="rounded-lg bg-white/20 border border-white/60 px-3 py-2">Tailwind</span>
+          <span class="rounded-lg bg-white/20 border border-white/60 px-3 py-2">Node / Nest</span>
+          <span class="rounded-lg bg-white/20 border border-white/60 px-3 py-2">Stripe</span>
+          <span class="rounded-lg bg-white/20 border border-white/60 px-3 py-2">Postgres</span>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="relative z-10 mt-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-white drop-shadow mb-6">Plans that scale with you</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="rounded-2xl bg-white/70 dark:bg-white/10 backdrop-blur-md border border-indigo-400 p-8 shadow">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Starter</h3>
+          <p class="text-gray-700/90 dark:text-gray-200 mt-1">Perfect for landing pages & small sites</p>
+          <p class="mt-4 text-4xl font-extrabold text-gray-900 dark:text-white">$899</p>
+          <ul class="mt-4 space-y-2 text-gray-700/90 dark:text-gray-200">
+            <li>✔ Up to 5 pages</li>
+            <li>✔ Mobile‑first & accessible</li>
+            <li>✔ Basic SEO setup</li>
+          </ul>
+          <a href="#contact" class="mt-6 inline-flex rounded-xl bg-emerald-600 px-5 py-3 text-white font-semibold hover:bg-emerald-700">Choose Starter</a>
+        </div>
+        <div class="rounded-2xl bg-white/70 dark:bg-white/10 backdrop-blur-md border border-indigo-400 p-8 shadow">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Growth</h3>
+          <p class="text-gray-700/90 dark:text-gray-200 mt-1">For products & e‑commerce</p>
+          <p class="mt-4 text-4xl font-extrabold text-gray-900 dark:text-white">$1899</p>
+          <ul class="mt-4 space-y-2 text-gray-700/90 dark:text-gray-200">
+            <li>✔ Unlimited pages</li>
+            <li>✔ CMS / e‑commerce</li>
+            <li>✔ Performance & SEO audit</li>
+          </ul>
+          <a href="#contact" class="mt-6 inline-flex rounded-xl bg-emerald-600 px-5 py-3 text-white font-semibold hover:bg-emerald-700">Choose Growth</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="relative z-10 mt-16 mb-24">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="rounded-2xl bg-white/70 dark:bg-white/10 backdrop-blur-md border border-white/40 p-8 md:p-10 shadow flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-white">From idea to production in days</h3>
+          <p class="mt-2 text-gray-700/90 dark:text-gray-200">Tell us what you’re building — we’ll make it real.</p>
+        </div>
+        <a href="mailto:hello@devagency.com" class="rounded-xl bg-emerald-600 px-6 py-3 text-white font-semibold hover:bg-emerald-700">Email us</a>
       </div>
     </div>
   </section>
@@ -93,79 +159,7 @@
       </div>
     </div>
   </section>
-
-  <!-- Split section -->
-  <section id="work" class="relative z-10 mt-16">
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-stretch">
-      <div class="rounded-2xl bg-white/70 dark:bg-white/10 backdrop-blur-md border border-white/40 p-8 shadow">
-        <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Results that compound</h3>
-        <ul class="mt-4 space-y-3 text-gray-700/90 dark:text-gray-200">
-          <li>✅ 95+ Lighthouse Performance</li>
-          <li>✅ 30–60% faster page loads</li>
-          <li>✅ SEO‑ready with rich snippets</li>
-          <li>✅ Analytics & A/B testing baked in</li>
-        </ul>
-        <a href="#contact" class="mt-6 inline-flex rounded-xl bg-emerald-600 px-5 py-3 text-white font-semibold hover:bg-emerald-700">See case studies</a>
-      </div>
-      <div class="rounded-2xl bg-white/70 dark:bg-white/10 backdrop-blur-md border border-white/40 p-8 shadow">
-        <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Tech we love</h3>
-        <div class="mt-4 grid grid-cols-2 gap-3 text-gray-800 dark:text-gray-100">
-          <span class="rounded-lg bg-white/60 border border-white/60 px-3 py-2">Next.js</span>
-          <span class="rounded-lg bg-white/60 border border-white/60 px-3 py-2">React</span>
-          <span class="rounded-lg bg-white/60 border border-white/60 px-3 py-2">Tailwind</span>
-          <span class="rounded-lg bg-white/60 border border-white/60 px-3 py-2">Node / Nest</span>
-          <span class="rounded-lg bg-white/60 border border-white/60 px-3 py-2">Stripe</span>
-          <span class="rounded-lg bg-white/60 border border-white/60 px-3 py-2">Postgres</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pricing -->
-  <section id="pricing" class="relative z-10 mt-16">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-2xl md:text-3xl font-bold text-white drop-shadow mb-6">Plans that scale with you</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="rounded-2xl bg-white/70 dark:bg-white/10 backdrop-blur-md border border-white/40 p-8 shadow">
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Starter</h3>
-          <p class="text-gray-700/90 dark:text-gray-200 mt-1">Perfect for landing pages & small sites</p>
-          <p class="mt-4 text-4xl font-extrabold text-gray-900 dark:text-white">$899</p>
-          <ul class="mt-4 space-y-2 text-gray-700/90 dark:text-gray-200">
-            <li>✔ Up to 5 pages</li>
-            <li>✔ Mobile‑first & accessible</li>
-            <li>✔ Basic SEO setup</li>
-          </ul>
-          <a href="#contact" class="mt-6 inline-flex rounded-xl bg-emerald-600 px-5 py-3 text-white font-semibold hover:bg-emerald-700">Choose Starter</a>
-        </div>
-        <div class="rounded-2xl bg-white/70 dark:bg-white/10 backdrop-blur-md border border-white/40 p-8 shadow">
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Growth</h3>
-          <p class="text-gray-700/90 dark:text-gray-200 mt-1">For products & e‑commerce</p>
-          <p class="mt-4 text-4xl font-extrabold text-gray-900 dark:text-white">$1899</p>
-          <ul class="mt-4 space-y-2 text-gray-700/90 dark:text-gray-200">
-            <li>✔ Unlimited pages</li>
-            <li>✔ CMS / e‑commerce</li>
-            <li>✔ Performance & SEO audit</li>
-          </ul>
-          <a href="#contact" class="mt-6 inline-flex rounded-xl bg-emerald-600 px-5 py-3 text-white font-semibold hover:bg-emerald-700">Choose Growth</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section id="contact" class="relative z-10 mt-16 mb-24">
-    <div class="max-w-5xl mx-auto px-6">
-      <div class="rounded-2xl bg-white/70 dark:bg-white/10 backdrop-blur-md border border-white/40 p-8 md:p-10 shadow flex flex-col md:flex-row items-center justify-between gap-6">
-        <div>
-          <h3 class="text-2xl font-bold text-gray-900 dark:text-white">From idea to production in days</h3>
-          <p class="mt-2 text-gray-700/90 dark:text-gray-200">Tell us what you’re building — we’ll make it real.</p>
-        </div>
-        <a href="mailto:hello@devagency.com" class="rounded-xl bg-emerald-600 px-6 py-3 text-white font-semibold hover:bg-emerald-700">Email us</a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="relative z-10">
+<footer class="relative z-10">
     <div class="max-w-7xl mx-auto px-6 py-10 text-sm text-white/80">
       © 2025 DevAgency. All rights reserved.
     </div>
