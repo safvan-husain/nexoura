@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Web Dev Agency — Fixed Background</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <meta name="color-scheme" content="light dark">
@@ -15,8 +15,7 @@
     }
 
     body {
-      background-image: url('./assets/background.png');
-      background-attachment: fixed;
+      /* Background moved to fixed element for iOS Safari compatibility */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -25,6 +24,10 @@
 </head>
 
 <body class="text-gray-800 flex flex-col min-h-screen relative">
+  <!-- Fixed full-viewport background image (works on iOS Safari) -->
+  <div class="fixed inset-0 -z-10">
+    <img src="assets/background.png" alt="" class="w-full h-full object-cover" />
+  </div>
   <!-- Optional dark overlay to improve contrast on busy images -->
   <div class="fixed inset-0 bg-black/30 pointer-events-none"></div>
 
@@ -42,7 +45,7 @@
 
   <main class="relative z-10 flex flex-col flex-1 gap-20">
 
-    <div class="min-h-screen h-screen grid grid-rows-[minmax(0,1fr)_minmax(0,1fr)]">
+    <div class="min-h-screen min-h-[100dvh] grid grid-rows-[minmax(0,1fr)_minmax(0,1fr)]">
       <!-- Hero card -->
       <section class="relative flex h-full items-center">
         <div class="flex px-6 w-full justify-center -mt-20">
@@ -61,7 +64,7 @@
       <!-- Split section -->
       <section id="work" class="relative flex h-full items-start justify-center -mt-5">
         <div
-          class="w-full sm:mx-10 mx-2 max-w-[1200px] px-6 grid md:grid-cols-2 gap-8 items-stretch rounded-2xl bg-white/70 dark:bg-white/10 backdrop-blur-md p-8 shadow-[0_-6px_12px_rgba(255,255,255,0.6),0_8px_20px_rgba(0,0,0,0.25)]">
+          class="w-full sm:mx-10 mx-2 max-w-[1200px] px-6 grid md:grid-cols-2 gap-8 items-stretch rounded-2xl bg-white/20 backdrop-blur-md p-8 shadow-[0_-6px_12px_rgba(255,255,255,0.6),0_8px_20px_rgba(0,0,0,0.25)]">
           <div class="">
             <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Results that compound</h3>
             <ul class="mt-4 space-y-3 text-gray-700/90 dark:text-gray-200">
@@ -251,7 +254,7 @@
 
           <form
             class="mt-6 space-y-4 p-4 sm:p-6 rounded-2xl bg-white/10 border border-indigo-400/70 backdrop-blur-md shadow"
-            action="https://formsubmit.co/nexourax@gmail.com" method="post">
+            action="https://formsubmit.co/krishnaarun516@gmail.com" method="post">
             <div>
               <label for="name" class="sr-only">Name</label>
               <input id="name" name="name" type="text" autocomplete="name" placeholder="Name"
